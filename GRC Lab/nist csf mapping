@@ -1,0 +1,210 @@
+# NIST CSF 2.0 — Controls Mapping & Gap Analysis
+
+**Organization:** Apex Property Management  
+**Assessor:** Demarcus Adams  
+**Date:** June 2026  
+**Framework Version:** NIST Cybersecurity Framework (CSF) 2.0  
+**Overall Compliance:** 35% (31/88 controls implemented)
+
+---
+
+## Maturity Scale
+
+| Level | Label | Description |
+|-------|-------|-------------|
+| 1 | Initial | Ad-hoc, reactive; no documented processes |
+| 2 | Developing | Some processes exist but inconsistently applied |
+| 3 | Defined | Documented, approved, and consistently followed |
+| 4 | Managed | Measured, monitored, and actively improved |
+| 5 | Optimizing | Continuously improved; industry benchmark |
+
+---
+
+## Maturity Summary
+
+![NIST CSF Maturity Assessment](screenshots/03_nist_csf_maturity.png)
+
+![Compliance Gap Analysis](screenshots/04_compliance_gap_analysis.png)
+
+| CSF Function | Current Maturity | Target Maturity | Gap | Controls: Impl/Total | % Complete |
+|---|---|---|---|---|---|
+| **Govern (GV)** | 1.5 | 3.5 | +2.0 | 4/12 | 33% |
+| **Identify (ID)** | 2.0 | 3.5 | +1.5 | 8/18 | 44% |
+| **Protect (PR)** | 2.0 | 4.0 | +2.0 | 10/24 | 42% |
+| **Detect (DE)** | 1.5 | 3.5 | +2.0 | 4/10 | 40% |
+| **Respond (RS)** | 1.0 | 3.0 | +2.0 | 3/14 | 21% |
+| **Recover (RC)** | 1.0 | 3.0 | +2.0 | 2/10 | 20% |
+| **TOTAL** | **1.5 avg** | **3.4 avg** | **+1.9** | **31/88** | **35%** |
+
+---
+
+## Function-Level Detail
+
+### GOVERN (GV) — Maturity: 1.5 / 5.0 | 4/12 Controls
+
+The organizational cybersecurity risk management strategy, expectations, and policy.
+
+| Control | Description | Status | Gap |
+|---------|-------------|--------|-----|
+| GV.OC-01 | Organizational mission and values inform cybersecurity risk decisions | Partial | Policy not formalized |
+| GV.OC-02 | Internal and external stakeholder cybersecurity dependencies identified | Not Implemented | No stakeholder mapping |
+| GV.RM-01 | Risk management objectives established and agreed upon | Not Implemented | No risk strategy document |
+| GV.RM-02 | Risk appetite and risk tolerance statements exist | Not Implemented | Not defined |
+| GV.RM-03 | Cybersecurity risk management integrated with enterprise risk | Not Implemented | Siloed from ERM |
+| GV.RR-01 | Leadership accountable for cybersecurity risk decisions | Partial | Informal, undocumented |
+| GV.RR-02 | Roles, responsibilities, and authorities for cybersecurity are established | Not Implemented | No RACI chart |
+| GV.SC-01 | Cybersecurity supply chain risk management policy exists | Not Implemented | No vendor risk program |
+| GV.SC-02 | Cybersecurity roles in supply chain are established | Not Implemented | — |
+| GV.PO-01 | Information security policy is established and communicated | **Implemented** | ✅ Done June 2026 |
+| GV.PO-02 | Policy reviewed and updated annually | Partial | First version; schedule not set |
+| GV.PO-03 | Employees acknowledge policy | Not Implemented | No signed acknowledgment |
+
+**Priority Actions:** Formalize risk management strategy; define risk appetite; create RACI chart; establish vendor risk program.
+
+---
+
+### IDENTIFY (ID) — Maturity: 2.0 / 5.0 | 8/18 Controls
+
+Understanding the organization's assets, suppliers, and related cybersecurity risks.
+
+| Control | Description | Status |
+|---------|-------------|--------|
+| ID.AM-01 | Inventories of hardware managed by the org are maintained | Partial |
+| ID.AM-02 | Inventories of software, services, data managed are maintained | Partial |
+| ID.AM-03 | Representations of network architecture are maintained | Not Implemented |
+| ID.AM-04 | Inventories of services provided by suppliers are maintained | Not Implemented |
+| ID.AM-05 | Assets prioritized based on classification and criticality | Not Implemented |
+| ID.AM-07 | Inventories of data and personnel updated when needed | Partial |
+| ID.AM-08 | Systems, hardware, software, services, and data managed throughout lifecycle | Partial |
+| ID.RA-01 | Vulnerabilities in assets are identified and documented | Partial |
+| ID.RA-02 | Cyber threat intelligence received from information sharing forums | Not Implemented |
+| ID.RA-03 | Internal and external threats identified and documented | **Implemented** |
+| ID.RA-04 | Potential impacts of threats and vulnerabilities are understood | **Implemented** |
+| ID.RA-05 | Threats, vulnerabilities, likelihoods, and impacts used to inform risk | **Implemented** |
+| ID.RA-06 | Risk responses are chosen and prioritized | **Implemented** |
+| ID.RA-07 | Changes and exceptions are managed and approved | Not Implemented |
+| ID.RA-08 | Processes for receiving and analyzing vulnerability disclosures exist | Not Implemented |
+| ID.RA-09 | Impact of identified vulnerabilities is understood | **Implemented** |
+| ID.RA-10 | Critical suppliers are assessed | Not Implemented |
+| ID.IM-01 | Improvements are identified from security assessments | **Implemented** |
+
+**Priority Actions:** Complete asset inventory and data classification; establish threat intelligence sharing; implement change management process.
+
+---
+
+### PROTECT (PR) — Maturity: 2.0 / 5.0 | 10/24 Controls
+
+Safeguards to manage the organization's cybersecurity risks.
+
+| Control | Description | Status |
+|---------|-------------|--------|
+| PR.AA-01 | Identities and credentials managed for authorized users/devices | Partial |
+| PR.AA-02 | Identities proofed and bound to credentials based on context | Not Implemented |
+| PR.AA-03 | Users, services, and hardware authenticated | Partial |
+| PR.AA-04 | Identity assertions protected, conveyed, and verified | Not Implemented |
+| PR.AA-05 | Access permissions and authorizations managed (RBAC) | Not Implemented |
+| PR.AA-06 | Physical access is managed and protected | **Implemented** |
+| PR.AT-01 | Personnel receive awareness and training | Partial |
+| PR.AT-02 | Personnel with elevated privileges receive specialized training | Not Implemented |
+| PR.DS-01 | Data-at-rest protected | Not Implemented |
+| PR.DS-02 | Data-in-transit protected | Partial |
+| PR.DS-10 | Data-in-use protected | Not Implemented |
+| PR.DS-11 | Backups of data created, protected, and tested | Partial |
+| PR.IR-01 | Networks and environments protected from unauthorized access | **Implemented** |
+| PR.IR-02 | Network integrity is protected (network segmentation) | Partial |
+| PR.IR-03 | Mechanisms implemented to achieve resilience requirements | Not Implemented |
+| PR.IR-04 | Adequate resource capacity to ensure availability | Partial |
+| PR.PS-01 | Configuration management practices established and applied | Not Implemented |
+| PR.PS-02 | Software maintained to reduce exploitability | Partial |
+| PR.PS-03 | Hardware maintained to reduce exploitability | Partial |
+| PR.PS-04 | Log records created and retained | **Implemented** |
+| PR.PS-05 | Installation and execution of unauthorized software is prevented | Not Implemented |
+| PR.PS-06 | Secure software development practices integrated | **Implemented** (N/A — vendor managed) |
+| PR.PO-01 | Security policies, processes, and procedures established | **Implemented** |
+| PR.PO-02 | Rules of behavior for assets and personnel established | **Implemented** |
+
+**Priority Actions:** Enforce MFA (PR.AA-03); implement RBAC (PR.AA-05); encrypt data at rest (PR.DS-01); establish patch management SLA (PR.PS-02).
+
+---
+
+### DETECT (DE) — Maturity: 1.5 / 5.0 | 4/10 Controls
+
+Finding and analyzing possible cybersecurity attacks and compromises.
+
+| Control | Description | Status |
+|---------|-------------|--------|
+| DE.AE-02 | Potentially adverse events analyzed to characterize them | **Implemented** |
+| DE.AE-03 | Information correlated from multiple sources | Not Implemented |
+| DE.AE-04 | Estimated impact and scope of adverse events understood | **Implemented** |
+| DE.AE-06 | Information on adverse events provided to authorized staff/tools | Not Implemented |
+| DE.AE-07 | Cyber threat intelligence integrated into detection | Not Implemented |
+| DE.AE-08 | Incidents declared when adverse events meet criteria | **Implemented** |
+| DE.CM-01 | Networks monitored to find potentially adverse events | Not Implemented |
+| DE.CM-02 | Physical environment monitored | **Implemented** |
+| DE.CM-03 | Personnel activity and technology usage monitored | Not Implemented |
+| DE.CM-06 | External service provider activities monitored | Not Implemented |
+
+**Priority Actions:** Deploy SIEM with continuous log monitoring (DE.CM-01); correlate alerts from multiple sources (DE.AE-03); establish threat intelligence feed (DE.AE-07).
+
+---
+
+### RESPOND (RS) — Maturity: 1.0 / 5.0 | 3/14 Controls
+
+Actions to take when a cybersecurity incident is detected.
+
+| Control | Description | Status |
+|---------|-------------|--------|
+| RS.MA-01 | Incident response plan executed | Not Implemented |
+| RS.MA-02 | Incident reports triaged | Partial |
+| RS.MA-03 | Incidents categorized and prioritized | Partial |
+| RS.MA-04 | Incidents escalated or elevated as needed | **Implemented** |
+| RS.MA-05 | Incidents closed | Not Implemented |
+| RS.AN-03 | Analysis performed to establish root cause | Not Implemented |
+| RS.AN-06 | Actions performed during investigation documented | Not Implemented |
+| RS.AN-07 | Incident magnitude estimated | Not Implemented |
+| RS.AN-08 | Forensic techniques applied to preserve evidence | Not Implemented |
+| RS.CO-02 | Internal stakeholders notified of incidents | Partial |
+| RS.CO-03 | Information shared with designated parties | Not Implemented |
+| RS.MI-01 | Incidents contained | Not Implemented |
+| RS.MI-02 | Incidents eradicated | Not Implemented |
+| RS.IM-01 | Recovery plan executed with lessons learned | Not Implemented |
+
+**Priority Actions:** Develop and publish Incident Response Plan; define incident categories; conduct tabletop exercise; establish forensics documentation process.
+
+---
+
+### RECOVER (RC) — Maturity: 1.0 / 5.0 | 2/10 Controls
+
+Restoring assets and operations affected by a cybersecurity incident.
+
+| Control | Description | Status |
+|---------|-------------|--------|
+| RC.RP-01 | Recovery plan executed during/after incident | Not Implemented |
+| RC.RP-02 | Recovery plan updated after incident | Not Implemented |
+| RC.RP-03 | Recovery activities communicated to internal parties | **Implemented** |
+| RC.RP-04 | Recovery activities communicated to external parties | Not Implemented |
+| RC.RP-05 | Restoration integrity confirmed | Not Implemented |
+| RC.RP-06 | End of incident declared | Not Implemented |
+| RC.CO-03 | Recovery activities communicated to stakeholders | Partial |
+| RC.CO-04 | Public relations managed | **Implemented** |
+| RC.IM-01 | Resilience restored through recovery activities | Not Implemented |
+| RC.IM-02 | Lessons learned incorporated into future procedures | Not Implemented |
+
+**Priority Actions:** Develop and test Disaster Recovery Plan; define RTO/RPO; conduct annual DR tabletop exercise; establish post-incident review process.
+
+---
+
+## Remediation Roadmap
+
+![Executive Summary Dashboard](screenshots/05_executive_dashboard.png)
+
+| Priority | Action | CSF Function | Timeline | Owner |
+|----------|--------|-------------|----------|-------|
+| P1 | Establish InfoSec Governance Policy | GV | June 2026 ✅ | Compliance |
+| P1 | Complete Asset Inventory & Data Classification | ID | July 2026 | IT Manager |
+| P1 | Deploy MFA on All Critical Applications | PR | July 2026 | IT Manager |
+| P1 | Implement SIEM with Threshold Alerting | DE | August 2026 | IT Manager |
+| P1 | Develop & Publish Incident Response Plan | RS | September 2026 | Compliance |
+| P2 | Conduct Third-Party Vendor Risk Assessments | GV/ID | September 2026 | Compliance |
+| P2 | Create and Test Disaster Recovery Plan | RC | October 2026 | Exec / IT |
+| P2 | Internal Compliance Audit (full re-assessment) | ALL | December 2026 | Compliance |
